@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>我的简历</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eee;
+            margin: 20px 0;
+        }
+
+        article {
+            width: 21cm;
+            /* 这两行代表 A4 纸的标准尺寸 */
+            min-height: 29.7cm;
+            background: white;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 1em;
+        }
+    </style>
+    <style media="print">
+        body {
+            margin: 0;
+        }
+
+        #skills {
+            display: none;
+        }
+    </style>
+    </style>
+    <style>
+        h1 {
+            font-size: 23px;
+            margin-top: 0;
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: inherit;
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px solid #000;
+        }
+
+        body {}
+
+        p {
+            margin: .3em 0;
+        }
+
+        .bio {
+            position: relative;
+        }
+
+        .bio img {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+
+
+    <style>
+        .projects {}
+
+        .projects p {
+            color: #666;
+        }
+
+        .projects strong {
+            color: #f60;
+        }
+
+        .projects>ol {
+            list-style-position: inside;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        .projects>ol>li {
+            margin-bottom: 16px;
+        }
+
+        .projects>ol>li>header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .projects>ol>li>header>h3 {
+            display: inline-block;
+        }
+
+        #skills {
+            width: auto;
+        }
+    </style>
+    <style>
+        #skills {
+            width: 500px;
+            height: 270px;
+        }
+    </style>
+
+
+    <style>
+        @media (max-width: 500px) {
+            body {
+                margin: 0;
+            }
+
+            article {
+                width: auto;
+                height: auto;
+            }
+
+            .bio img {
+                display: none;
+            }
+
+            #skills {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <section class="bio">
+            <h1>陆鑫</h1>
+            <img src="" alt="" width="100" height="100">
+            <p>
+                男 | 23岁 | 前端开发工程师 | 长沙
+            </p>
+            <p>
+                手机：<a href="tel:15871622506">15871622506</a> | 微信：lyric13579 | 邮箱：<a
+                    href="mailto:luxin1459@163.com">luxin1459@163.com</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>教育经历</h2>
+            <p>
+                <span><time>2016年</time>~<time>2020年</time></span>
+            </p>
+        </section>
+
+        <section>
+            <h2>技能</h2>
+            <div id="skills"></div>
+        </section>
+
+        <section class="projects">
+            <h2>项目经历</h2>
+            <ol>
+                <li>
+                    <header>
+                        <h3>谷UI</h3>
+                        <span>
+                            <a href="#">源码链接</a>
+                            <a href="#">项目预览</a>
+                        </span>
+                    </header>
+                    <p>
+                        一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
+
+                    </p>
+                    <p>
+                        主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
+
+                    </p>
+                    <p>
+                        已被公司前端同事广泛使用，有效提高前端团队的开发效率。
+
+                    </p>
+                    <p>
+                        制作过程让我对 TypeScript 和单元测试有了新的认识。
+                        我将其总结成了一篇博客《TS 泛型的使用》。
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+    </article>
+
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
